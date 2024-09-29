@@ -136,4 +136,4 @@ shape = SubResource("RectangleShape2D_sduql")
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_07m5h")
 animation = &"jump"
-frame_progress = 0.215406
+frame_progress = 0.824566
