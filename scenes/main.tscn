@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b156kvod4yr1w"]
+[gd_scene load_steps=3 format=3 uid="uid://bo1e83u14ey1b"]
 
-[ext_resource type="Texture2D" uid="uid://fqwrwwyegin4" path="res://icon.svg" id="1_gutoc"]
+[ext_resource type="PackedScene" uid="uid://ckmyjhy7uy5vx" path="res://scenes/mapa.tscn" id="1_ylihd"]
+[ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/node_2d.tscn" id="2_b52db"]
 
-[node name="Main" type="Node2D"]
+[node name="main" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(156, 107)
-texture = ExtResource("1_gutoc")
+[node name="mapa" parent="." instance=ExtResource("1_ylihd")]
+
+[node name="Node2D" parent="." instance=ExtResource("2_b52db")]
+position = Vector2(140, 306)
