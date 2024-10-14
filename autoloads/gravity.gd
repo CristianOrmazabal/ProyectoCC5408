@@ -1,13 +1,10 @@
 extends Node
 
+var gravityG = Vector2(0,1)
 
+func _get_gravity()-> Vector2:
+	return gravityG
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _set_gravity(g: Vector2) -> void:
+	gravityG = g
+	
