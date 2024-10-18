@@ -1,10 +1,12 @@
 extends Node
-
+#hacer señal
+signal gravityG_changed()
 var gravityG = Vector2(0,1)
 
-func _get_gravity()-> Vector2:
+func get_gravity()-> Vector2:
 	return gravityG
 
-func _set_gravity(g: Vector2) -> void:
+func set_gravity(g: Vector2) -> void:
 	gravityG = g
+	gravityG_changed.emit()
 	
