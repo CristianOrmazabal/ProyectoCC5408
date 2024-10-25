@@ -8,4 +8,4 @@
 [node name="mapa" parent="." instance=ExtResource("1_ylihd")]
 
 [node name="Node2D" parent="." instance=ExtResource("2_b52db")]
-position = Vector2(140, 306)
+position = Vector2(191, 257)

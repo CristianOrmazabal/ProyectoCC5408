@@ -9,10 +9,11 @@ func _ready() -> void:
 	
 	
 func _physics_process(delta: float) -> void:
-	set_constant_force(grav*1000)
-	print(constant_force)
+	pass
+	#print(constant_force)
 
 func _on_gravity_changed() -> void:
 	grav = Gravity.get_gravity()
-	set_constant_force(Vector2(0,0))
+	#set_constant_force(Vector2(0,0))
+	#set_constant_force(grav*1000)
 	

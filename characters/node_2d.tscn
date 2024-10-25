@@ -26,7 +26,8 @@
 [ext_resource type="Texture2D" uid="uid://bxnxs6hgvv63t" path="res://assets/Little Mage1-1/Little Mage/Run/Run5.png" id="23_mx81f"]
 [ext_resource type="Texture2D" uid="uid://b78vvcs28n3gv" path="res://assets/Little Mage1-1/Little Mage/Run/Run6.png" id="24_47q5g"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sduql"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0shu6"]
+height = 24.6667
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_07m5h"]
 animations = [{
@@ -128,9 +129,29 @@ animations = [{
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("1_ltxrq")
 
+[node name="RayCast2D_UP" type="RayCast2D" parent="Player"]
+unique_name_in_owner = true
+target_position = Vector2(0, -50)
+
+[node name="RayCast2D_UP_LEFT" type="RayCast2D" parent="Player"]
+unique_name_in_owner = true
+target_position = Vector2(25, -30)
+
+[node name="RayCast2D_UP_RIGHT" type="RayCast2D" parent="Player"]
+unique_name_in_owner = true
+target_position = Vector2(-25, -30)
+
+[node name="RayCast2D_RIGHT" type="RayCast2D" parent="Player"]
+unique_name_in_owner = true
+target_position = Vector2(40, 0)
+
+[node name="RayCast2D_LEFT" type="RayCast2D" parent="Player"]
+unique_name_in_owner = true
+target_position = Vector2(-40, 0)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_sduql")
+shape = SubResource("CapsuleShape2D_0shu6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 scale = Vector2(4, 4)
