@@ -7,9 +7,12 @@ const JUMP_VELOCITY = -400.0
 @onready var ray_cast_2d_up: RayCast2D = %RayCast2D_UP
 @onready var ray_cast_2d_up_left: RayCast2D = %RayCast2D_UP_LEFT
 @onready var ray_cast_2d_up_right: RayCast2D = %RayCast2D_UP_RIGHT
-@onready var ray_cast_2d_right: RayCast2D = %RayCast2D_RIGHT
-@onready var ray_cast_2d_left: RayCast2D = %RayCast2D_LEFT
-
+@onready var ray_cast_2d_right: RayCast2D = %RayCast2D_RIGHT1
+@onready var ray_cast_2d_left: RayCast2D = %RayCast2D_LEFT1
+@onready var ray_cast_2d_right_2: RayCast2D = %RayCast2D_RIGHT2
+@onready var ray_cast_2d_left_2: RayCast2D = %RayCast2D_LEFT2
+@onready var ray_cast_2d_right_3: RayCast2D = %RayCast2D_RIGHT3
+@onready var ray_cast_2d_left_3: RayCast2D = %RayCast2D_LEFT3
 
 
 
@@ -27,10 +30,14 @@ func _physics_process(delta):
 	#var ray_up = ray_cast_2d_up.get_collider()
 	var rays = {
 		"up": ray_cast_2d_up,
-		"left": ray_cast_2d_left,
+		"left1": ray_cast_2d_left,
 		"up_left": ray_cast_2d_up_left,
-		"right": ray_cast_2d_right,
-		"up_right": ray_cast_2d_up_right
+		"right1": ray_cast_2d_right,
+		"up_right": ray_cast_2d_up_right,
+		"left2": ray_cast_2d_left_2,
+		"left3": ray_cast_2d_left_3,
+		"right2": ray_cast_2d_right_2,
+		"right3": ray_cast_2d_right_3
 	}
 	for key in rays:		
 		#print(key)	
@@ -42,7 +49,7 @@ func _physics_process(delta):
 			var norm = col.get_collision_normal()
 			if rgd:
 				#rgd.apply_central_impulse(global_position.direction_to(rgd.global_position)*500)
-				rgd.apply_central_impulse(-norm*25)
+				rgd.apply_central_impulse(-norm*15)
 	#var col = get_slide_collision_count()
 	#for i in col:
 		#var collision = get_slide_collision(i)
