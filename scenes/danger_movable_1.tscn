@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1qot5mqq30px"]
+
+[ext_resource type="Texture2D" uid="uid://b0hnnt20btvna" path="res://icon.svg" id="1_06q4g"]
+[ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="1_u8uul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6ul7"]
+size = Vector2(132, 134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bfay"]
+size = Vector2(136, 136)
+
+[node name="Danger1" type="RigidBody2D"]
+can_sleep = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+shape = SubResource("RectangleShape2D_c6ul7")
+debug_color = Color(0.93687, 0.231161, 0.261845, 0.42)
+
+[node name="RestartZone" parent="." instance=ExtResource("1_u8uul")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RestartZone"]
+shape = SubResource("RectangleShape2D_1bfay")
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("1_06q4g")
