@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4c54mbl21clx"]
+
+[ext_resource type="PackedScene" uid="uid://ckmyjhy7uy5vx" path="res://scenes/mapa.tscn" id="1_3wtxf"]
+[ext_resource type="PackedScene" uid="uid://c1qot5mqq30px" path="res://scenes/danger_movable_1.tscn" id="2_tiolc"]
+
+[node name="TestPerdida" type="Node2D"]
+
+[node name="mapa" parent="." instance=ExtResource("1_3wtxf")]
+
+[node name="Danger1" parent="." instance=ExtResource("2_tiolc")]
+position = Vector2(543, 308)
