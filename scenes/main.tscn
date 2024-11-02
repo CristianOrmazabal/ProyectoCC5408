@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bo1e83u14ey1b"]
+[gd_scene load_steps=3 format=3 uid="uid://bo1e83u14ey1b"]
 
 [ext_resource type="PackedScene" uid="uid://ckmyjhy7uy5vx" path="res://scenes/mapa.tscn" id="1_ylihd"]
 [ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/Player.tscn" id="2_b52db"]
-[ext_resource type="PackedScene" uid="uid://c1qot5mqq30px" path="res://scenes/danger_movable_1.tscn" id="3_7ib2i"]
 
 [node name="main" type="Node2D"]
 
@@ -10,6 +9,3 @@
 
 [node name="Node2D" parent="." instance=ExtResource("2_b52db")]
 position = Vector2(191, 257)
-
-[node name="Danger1" parent="." instance=ExtResource("3_7ib2i")]
-position = Vector2(523, 300)
