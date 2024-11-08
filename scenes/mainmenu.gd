@@ -6,6 +6,7 @@ extends Control
 var main = preload("res://scenes/main.tscn")
 @export var mainmenu: PackedScene
 
+
 #Creamos los Botones
 func _ready() -> void:
 	start.pressed.connect(_on_start_pressed)

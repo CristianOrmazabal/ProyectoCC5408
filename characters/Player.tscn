@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cek335pskom17"]
+[gd_scene load_steps=29 format=3 uid="uid://cek335pskom17"]
 
 [ext_resource type="Texture2D" uid="uid://dv4k5n45i5jj7" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling1.png" id="1_gw7q7"]
 [ext_resource type="Script" path="res://characters/Player.gd" id="1_ltxrq"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://c0r3dg1aaklqp" path="res://assets/Little Mage1-1/Little Mage/Run/Run4.png" id="22_soqe1"]
 [ext_resource type="Texture2D" uid="uid://bxnxs6hgvv63t" path="res://assets/Little Mage1-1/Little Mage/Run/Run5.png" id="23_mx81f"]
 [ext_resource type="Texture2D" uid="uid://b78vvcs28n3gv" path="res://assets/Little Mage1-1/Little Mage/Run/Run6.png" id="24_47q5g"]
+[ext_resource type="PackedScene" uid="uid://b7deov26f43cb" path="res://scenes/Pausa.tscn" id="26_bg282"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0shu6"]
 radius = 7.66667
@@ -179,3 +180,5 @@ shape = SubResource("CapsuleShape2D_0shu6")
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_07m5h")
 animation = &"idle"
+
+[node name="CanvasLayer" parent="Player" instance=ExtResource("26_bg282")]
