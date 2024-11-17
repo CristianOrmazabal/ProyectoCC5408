@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c62k648a6g6ye"]
+
+[ext_resource type="Script" path="res://components/checkpoint.gd" id="1_4frhe"]
+
+[node name="Checkpoint" type="Area2D"]
+script = ExtResource("1_4frhe")

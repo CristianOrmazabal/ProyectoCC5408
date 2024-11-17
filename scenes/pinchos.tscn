@@ -1,19 +1,23 @@
 [gd_scene load_steps=4 format=3 uid="uid://dtq5i6e80dnwu"]
 
-[ext_resource type="Texture2D" uid="uid://c8es6rt0t316" path="res://assets/Kings and Pigs/Sprites/09-Bomb/Bomb Off.png" id="1_y0fs1"]
+[ext_resource type="Texture2D" uid="uid://c5r5i4chg740k" path="res://assets/Trap and Weapon/27.png" id="1_xasia"]
 [ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="2_dk2t7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6fli"]
-size = Vector2(136, 136)
+size = Vector2(64, 62)
 
 [node name="pinchos" type="Node2D"]
+position = Vector2(0, 23)
 
-[node name="BombOff" type="Sprite2D" parent="."]
-position = Vector2(-0.999998, -0.999998)
-scale = Vector2(2.5, 2.39286)
-texture = ExtResource("1_y0fs1")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -23)
+scale = Vector2(4.055, 4.055)
+texture = ExtResource("1_xasia")
+region_enabled = true
+region_rect = Rect2(25.849, 33.119, 15.174, 14.881)
 
 [node name="RestartZone" parent="." instance=ExtResource("2_dk2t7")]
+position = Vector2(0, -23)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RestartZone"]
 shape = SubResource("RectangleShape2D_a6fli")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=4 uid="uid://bctcglvb2iadl"]
 
 [ext_resource type="Texture2D" uid="uid://ci08gmmfcnf32" path="res://assets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_os3mg"]
-[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://puertavictoria.tscn" id="2_4mpiu"]
+[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/puertavictoria.tscn" id="2_4mpiu"]
 [ext_resource type="PackedScene" uid="uid://c1qot5mqq30px" path="res://scenes/danger_movable_1.tscn" id="3_kq6rm"]
-[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://pinchos.tscn" id="4_v3f7x"]
+[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/pinchos.tscn" id="4_v3f7x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8n08"]
 texture = ExtResource("1_os3mg")
