@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cb765v35nuhgs"]
+
+[ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="1_cjgy1"]
+[ext_resource type="Texture2D" uid="uid://bxrhh5wapsddk" path="res://assets/Trap and Weapon/SpikeBall.png" id="2_dqria"]
+[ext_resource type="Texture2D" uid="uid://b0hnnt20btvna" path="res://icon.svg" id="3_xh2iq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_olbet"]
+radius = 17.1172
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d8ap2"]
+radius = 18.0
+
+[node name="Spikeball_S" type="RigidBody2D"]
+can_sleep = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
+shape = SubResource("CircleShape2D_olbet")
+debug_color = Color(0.93687, 0.231161, 0.261845, 0.42)
+
+[node name="RestartZone" parent="." instance=ExtResource("1_cjgy1")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RestartZone"]
+shape = SubResource("CircleShape2D_d8ap2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.90735e-06, -2.38419e-07)
+scale = Vector2(1.645, 1.645)
+texture = ExtResource("2_dqria")
+hframes = 2
+
+[node name="Icon" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("3_xh2iq")
