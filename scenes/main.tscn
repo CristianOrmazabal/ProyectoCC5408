@@ -8,4 +8,4 @@
 [node name="mapa 1" parent="." instance=ExtResource("1_gsgab")]
 
 [node name="Node2D" parent="." instance=ExtResource("2_b52db")]
-position = Vector2(191, 257)
+position = Vector2(83, 202)

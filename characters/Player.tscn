@@ -28,8 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://b7deov26f43cb" path="res://scenes/Pausa.tscn" id="26_bg282"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0shu6"]
-radius = 7.66667
-height = 24.6667
+radius = 11.0
+height = 42.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_07m5h"]
 animations = [{
@@ -133,51 +133,50 @@ script = ExtResource("1_ltxrq")
 
 [node name="RayCast2D_UP" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-target_position = Vector2(0, -50)
+target_position = Vector2(0, -30)
 
 [node name="RayCast2D_UP_LEFT" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-target_position = Vector2(25, -30)
+target_position = Vector2(16, -21)
 
 [node name="RayCast2D_UP_RIGHT" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-target_position = Vector2(-25, -30)
+target_position = Vector2(-16, -21)
 
 [node name="RayCast2D_RIGHT1" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-target_position = Vector2(40, 0)
+target_position = Vector2(15, 0)
 
 [node name="RayCast2D_LEFT1" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-target_position = Vector2(-40, 0)
+target_position = Vector2(-15, 0)
 
 [node name="RayCast2D_RIGHT2" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
 position = Vector2(0, -15)
-target_position = Vector2(30, 0)
+target_position = Vector2(15, 0)
 
 [node name="RayCast2D_LEFT2" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
 position = Vector2(0, -15)
-target_position = Vector2(-30, 0)
+target_position = Vector2(-15, 0)
 
 [node name="RayCast2D_RIGHT3" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-position = Vector2(0, 20)
-target_position = Vector2(35, 0)
+position = Vector2(0, 15)
+target_position = Vector2(14, 0)
 
 [node name="RayCast2D_LEFT3" type="RayCast2D" parent="Player"]
 unique_name_in_owner = true
-position = Vector2(0, 20)
-target_position = Vector2(-35, 0)
+position = Vector2(0, 15)
+target_position = Vector2(-14, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, -3)
-scale = Vector2(3, 3)
 shape = SubResource("CapsuleShape2D_0shu6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_07m5h")
 animation = &"idle"
 frame = 5
