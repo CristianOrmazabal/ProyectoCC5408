@@ -1,8 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 150.0
+const JUMP_VELOCITY = -250.0
 
 @onready var ray_cast_2d_up: RayCast2D = %RayCast2D_UP
 @onready var ray_cast_2d_up_left: RayCast2D = %RayCast2D_UP_LEFT
