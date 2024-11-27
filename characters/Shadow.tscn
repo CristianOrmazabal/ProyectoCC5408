@@ -1,0 +1,139 @@
+[gd_scene load_steps=28 format=3 uid="uid://csr2bf5psic21"]
+
+[ext_resource type="Script" path="res://characters/shadow.gd" id="1_2xnbr"]
+[ext_resource type="Texture2D" uid="uid://dv4k5n45i5jj7" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling1.png" id="2_nvjio"]
+[ext_resource type="Texture2D" uid="uid://wbghyxtrldlj" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling2.png" id="3_va7qf"]
+[ext_resource type="Texture2D" uid="uid://doyr2r64278vh" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling3.png" id="4_5ga6t"]
+[ext_resource type="Texture2D" uid="uid://btdxgor62y0l8" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling4.png" id="5_sfa82"]
+[ext_resource type="Texture2D" uid="uid://c6g8vtyjcb4et" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling5.png" id="6_e2w2j"]
+[ext_resource type="Texture2D" uid="uid://d0kfgxbn56ko4" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling6.png" id="7_56k1m"]
+[ext_resource type="Texture2D" uid="uid://cewsxedr22b84" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle1.png" id="8_d3evh"]
+[ext_resource type="Texture2D" uid="uid://cj01k7h8mwbw8" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle2.png" id="9_35gvg"]
+[ext_resource type="Texture2D" uid="uid://dtie3lo7hpu3a" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle3.png" id="10_7mhc8"]
+[ext_resource type="Texture2D" uid="uid://bd6cy32ufyewy" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle4.png" id="11_psgnb"]
+[ext_resource type="Texture2D" uid="uid://ycmriuoljg6q" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle5.png" id="12_mnwdm"]
+[ext_resource type="Texture2D" uid="uid://dnl3id4fwliq0" path="res://assets/Little Mage1-1/Little Mage/Idle/Idle6.png" id="13_ei4ix"]
+[ext_resource type="Texture2D" uid="uid://bgmodie7ccajm" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising1.png" id="14_5ymvw"]
+[ext_resource type="Texture2D" uid="uid://c0sfgyiqbtndu" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising2.png" id="15_pytqw"]
+[ext_resource type="Texture2D" uid="uid://cet3ntf5fcwpq" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising3.png" id="16_24opm"]
+[ext_resource type="Texture2D" uid="uid://nc2krmodu2nq" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising4.png" id="17_7waij"]
+[ext_resource type="Texture2D" uid="uid://4hwnj4ql6l7i" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising5.png" id="18_2fhdm"]
+[ext_resource type="Texture2D" uid="uid://dgpml44mc7gag" path="res://assets/Little Mage1-1/Little Mage/Rising - Jumping/Rising6.png" id="19_7wrjr"]
+[ext_resource type="Texture2D" uid="uid://degegps7oktio" path="res://assets/Little Mage1-1/Little Mage/Run/Run1.png" id="20_qjt53"]
+[ext_resource type="Texture2D" uid="uid://luj8onpaedw2" path="res://assets/Little Mage1-1/Little Mage/Run/Run2.png" id="21_yg8ls"]
+[ext_resource type="Texture2D" uid="uid://dv7ive8yk0sv7" path="res://assets/Little Mage1-1/Little Mage/Run/Run3.png" id="22_1h5gn"]
+[ext_resource type="Texture2D" uid="uid://c0r3dg1aaklqp" path="res://assets/Little Mage1-1/Little Mage/Run/Run4.png" id="23_kf5p6"]
+[ext_resource type="Texture2D" uid="uid://bxnxs6hgvv63t" path="res://assets/Little Mage1-1/Little Mage/Run/Run5.png" id="24_mjw6k"]
+[ext_resource type="Texture2D" uid="uid://b78vvcs28n3gv" path="res://assets/Little Mage1-1/Little Mage/Run/Run6.png" id="25_xxfos"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u5u52"]
+radius = 24.0
+height = 72.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i2b8s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nvjio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_va7qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5ga6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sfa82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e2w2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_56k1m")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_d3evh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_35gvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7mhc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_psgnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mnwdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ei4ix")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_5ymvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pytqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_24opm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7waij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2fhdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7wrjr")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_qjt53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_yg8ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1h5gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_kf5p6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_mjw6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_xxfos")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[node name="Shadow" type="CharacterBody2D"]
+script = ExtResource("1_2xnbr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_u5u52")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.00179181, 0.277222, 0.96265, 1)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_i2b8s")
+animation = &"idle"
+frame_progress = 0.157894

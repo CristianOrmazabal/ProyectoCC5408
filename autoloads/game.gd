@@ -1,5 +1,5 @@
 extends Node
-
+#game manager, no se usa
 var valid_checkpoint := false
 var last_checkpoint: Vector2
 

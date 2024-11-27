@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=4 uid="uid://bctcglvb2iadl"]
+[gd_scene load_steps=6 format=4 uid="uid://bctcglvb2iadl"]
 
 [ext_resource type="TileSet" uid="uid://vjxf8bke4d61" path="res://scenes/tilesets/tileset1.tres" id="1_1phs1"]
 [ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/puertavictoria.tscn" id="2_4mpiu"]
 [ext_resource type="PackedScene" uid="uid://c1qot5mqq30px" path="res://scenes/danger_movable_1.tscn" id="3_kq6rm"]
 [ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/pinchos.tscn" id="4_v3f7x"]
+[ext_resource type="PackedScene" uid="uid://bd2sube4b017f" path="res://ui/victory_screen.tscn" id="5_nmyp3"]
 
 [node name="mapa 1" type="Node2D"]
+
+[node name="Victory_screen" parent="." instance=ExtResource("5_nmyp3")]
+current_level = 1
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 scale = Vector2(3, 3)
@@ -15,6 +19,7 @@ tile_set = ExtResource("1_1phs1")
 [node name="Puertavictoria" parent="." instance=ExtResource("2_4mpiu")]
 position = Vector2(1044, 382)
 scale = Vector2(2, 2)
+priority = 1
 
 [node name="Danger1" parent="." instance=ExtResource("3_kq6rm")]
 position = Vector2(1027, 365)

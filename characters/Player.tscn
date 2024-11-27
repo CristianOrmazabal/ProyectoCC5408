@@ -180,5 +180,7 @@ shape = SubResource("CapsuleShape2D_0shu6")
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_07m5h")
 animation = &"idle"
+frame = 5
+frame_progress = 0.195971
 
 [node name="CanvasLayer" parent="Player" instance=ExtResource("26_bg282")]
