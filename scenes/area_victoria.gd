@@ -14,6 +14,7 @@ func _on_body_entered(body: Node) -> void:
 		action(player)
 	
 func action(player: Player) -> void:
+	LevelManager.victory.emit()
 	print("victoria")
 
 

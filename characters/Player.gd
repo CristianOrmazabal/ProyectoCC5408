@@ -65,7 +65,7 @@ func _physics_process(delta):
 #           ROTAR JUGADOR
 	if is_on_floor(): #cambio de gravedad solo usable en piso{
 		#var GlobalG = ["Gravity_down","Gravity_up","Gravity_left",""]
-		var inp = Input
+		#var inp = Input
 		if Input.is_action_just_pressed("Gravity_down"):
 			Gravity.set_gravity(Vector2.DOWN)
 			set_up_direction(Vector2.UP)

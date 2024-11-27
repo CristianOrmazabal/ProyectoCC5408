@@ -8,23 +8,26 @@ var main = preload("res://scenes/main.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	LevelManager.victory.connect(_on_victory)
 	next.pressed.connect(_on_next_pressed)
 	select.pressed.connect(_on_select_pressed)
 	menu.pressed.connect(_on_menu_pressed)
 	hide()
 
+func _on_victory() -> void:
+	LevelManager.unlock_level(current_level+1)
+	visible = not visible
+	get_tree().paused = visible
 
 func _on_next_pressed() -> void:
 	get_tree().paused = false
 	Gravity.set_gravity(Vector2.DOWN)	
 	LevelManager.load_level(current_level+1)
-	pass
 	
 func _on_select_pressed() -> void:
 	get_tree().paused = false
 	Gravity.set_gravity(Vector2.DOWN)
-	LevelManager.got_to_selector()
-	pass
+	LevelManager.go_to_selector()
 	
 func _on_menu_pressed() -> void:
 	get_tree().paused = false
