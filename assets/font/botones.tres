@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://nqrjmtaxrdsa"]
+
+[ext_resource type="FontFile" uid="uid://d054jnwv5kf72" path="res://assets/font/DungeonFont.ttf" id="1_kob0w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ht4nm"]
+
+[resource]
+default_font = ExtResource("1_kob0w")
+default_font_size = 53
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0.94902, 0.94902, 0.94902, 0)
+Button/colors/font_hover_color = Color(0.94902, 0.94902, 0.94902, 0)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/icon_focus_color = Color(1, 1, 1, 0)
+Button/styles/normal = SubResource("StyleBoxEmpty_ht4nm")

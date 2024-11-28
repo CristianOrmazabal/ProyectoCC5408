@@ -1,10 +1,15 @@
 extends Control
 
-@onready var start = $VBoxContainer/Start
-@onready var creditos = $VBoxContainer/Creditos
-@onready var quit_game = $"VBoxContainer/Quit Game"
+@onready var start = $Start
+@onready var credits = $Credits
+@onready var quit_game = $"Quit Game"
+
+@export var creditos: PackedScene
+#var creditos = preload("res://scenes/creditos.tscn")
 var main = preload("res://scenes/main.tscn")
 @export var mainmenu: PackedScene
+
+
 
 
 #Creamos los Botones
@@ -15,3 +20,5 @@ func _ready() -> void:
 func _on_start_pressed() -> void: #Start
 	get_tree().change_scene_to_packed(main)
 	
+func _on_credits_pressed() -> void: #Credits
+	get_tree().change_scene_to_file("res://scenes/creditos.tscn")

@@ -1,0 +1,438 @@
+[gd_scene load_steps=62 format=4 uid="uid://bxbd34cc6ytm6"]
+
+[ext_resource type="Texture2D" uid="uid://cv7vk2tqhb8gy" path="res://assets/Wood and Paper UI/Sprites/Green Board/1.png" id="1_5cn2g"]
+[ext_resource type="Texture2D" uid="uid://hpup3p5c4j5c" path="res://assets/celeste.jpg" id="1_5s1fs"]
+[ext_resource type="PackedScene" uid="uid://bligcwelo5rdg" path="res://assets/Wood and Paper UI/Sprites/Green Board/botonverdehorizontal.tscn" id="1_b7wup"]
+[ext_resource type="Script" path="res://scenes/creditos.gd" id="1_hbdrl"]
+[ext_resource type="Texture2D" uid="uid://bnwdabayaqsev" path="res://assets/Wood and Paper UI/Sprites/Green Board/2.png" id="2_hxv1i"]
+[ext_resource type="Texture2D" uid="uid://uob1vds1an77" path="res://assets/Wood and Paper UI/Sprites/Green Board/3.png" id="3_e3hu0"]
+[ext_resource type="Texture2D" uid="uid://cnk1gbxwwgg53" path="res://assets/Wood and Paper UI/Sprites/Green Board/4.png" id="4_e42l3"]
+[ext_resource type="Texture2D" uid="uid://1ap41ehlro8e" path="res://assets/Wood and Paper UI/Sprites/Green Board/5.png" id="5_74sea"]
+[ext_resource type="Texture2D" uid="uid://dgtgv5t8mss64" path="res://assets/Wood and Paper UI/Sprites/Green Board/6.png" id="6_t3beq"]
+[ext_resource type="Texture2D" uid="uid://ci6jjn3o6813p" path="res://assets/Wood and Paper UI/Sprites/Green Board/7.png" id="7_cvcfv"]
+[ext_resource type="Texture2D" uid="uid://c2lk488dokv7m" path="res://assets/Wood and Paper UI/Sprites/Green Board/8.png" id="8_o3apc"]
+[ext_resource type="Texture2D" uid="uid://pe7aho31h45y" path="res://assets/Wood and Paper UI/Sprites/Green Board/9.png" id="9_2qm0x"]
+[ext_resource type="Texture2D" uid="uid://bhwfrlw4mhl2t" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/1.png" id="10_v6ao1"]
+[ext_resource type="Texture2D" uid="uid://b13vwo2l7yxlf" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/2.png" id="11_oje3n"]
+[ext_resource type="Texture2D" uid="uid://bm703ucj6fnl8" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/3.png" id="12_3ok2q"]
+[ext_resource type="Texture2D" uid="uid://b88xban6gvd4n" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/4.png" id="13_61il7"]
+[ext_resource type="Texture2D" uid="uid://bgtjma5o6hl07" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/5.png" id="14_wctgd"]
+[ext_resource type="Texture2D" uid="uid://bpw7k0o8e6nl2" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/6.png" id="15_kppnn"]
+[ext_resource type="Texture2D" uid="uid://cegwjc14xef7w" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/7.png" id="16_vlq8u"]
+[ext_resource type="Texture2D" uid="uid://b3w8hag1t6ox1" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/8.png" id="17_rgikk"]
+[ext_resource type="Texture2D" uid="uid://ct2mwhacvyoo7" path="res://assets/Wood and Paper UI/Sprites/Yellow Paper/9.png" id="18_br3qj"]
+[ext_resource type="Texture2D" uid="uid://cgudxwkwva4yo" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/1.png" id="19_ghjfe"]
+[ext_resource type="Texture2D" uid="uid://dm2w8khkmd2kd" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/2.png" id="20_h1yf8"]
+[ext_resource type="Texture2D" uid="uid://cxn5m7t2f376k" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/3.png" id="21_5jv76"]
+[ext_resource type="Texture2D" uid="uid://cdnalxy8d4orr" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/4.png" id="22_2ymy5"]
+[ext_resource type="Texture2D" uid="uid://dsibgfk4wq1ck" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/5.png" id="23_5476x"]
+[ext_resource type="Texture2D" uid="uid://b4odaeirp3ple" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/6.png" id="24_eem85"]
+[ext_resource type="Texture2D" uid="uid://cff1reqqm2kuh" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/7.png" id="25_c7af6"]
+[ext_resource type="Texture2D" uid="uid://8qpumai3qbm7" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/8.png" id="26_yvu1l"]
+[ext_resource type="Texture2D" uid="uid://cx42nmbnxjhen" path="res://assets/Wood and Paper UI/Sprites/Yellow Board/9.png" id="27_fo7io"]
+[ext_resource type="Theme" uid="uid://nqrjmtaxrdsa" path="res://assets/font/botones.tres" id="28_813x1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xf5cl"]
+texture = ExtResource("1_5cn2g")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g2lli"]
+texture = ExtResource("2_hxv1i")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jdruw"]
+texture = ExtResource("3_e3hu0")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iplx0"]
+texture = ExtResource("4_e42l3")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t6x6n"]
+texture = ExtResource("5_74sea")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uy35h"]
+texture = ExtResource("6_t3beq")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_15c81"]
+texture = ExtResource("7_cvcfv")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mgg8j"]
+texture = ExtResource("8_o3apc")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_en4kw"]
+texture = ExtResource("9_2qm0x")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_52scl"]
+sources/0 = SubResource("TileSetAtlasSource_xf5cl")
+sources/1 = SubResource("TileSetAtlasSource_g2lli")
+sources/2 = SubResource("TileSetAtlasSource_jdruw")
+sources/3 = SubResource("TileSetAtlasSource_iplx0")
+sources/4 = SubResource("TileSetAtlasSource_t6x6n")
+sources/5 = SubResource("TileSetAtlasSource_uy35h")
+sources/6 = SubResource("TileSetAtlasSource_15c81")
+sources/7 = SubResource("TileSetAtlasSource_mgg8j")
+sources/8 = SubResource("TileSetAtlasSource_en4kw")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wb0y0"]
+texture = ExtResource("10_v6ao1")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mt60g"]
+texture = ExtResource("11_oje3n")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x1y8g"]
+texture = ExtResource("12_3ok2q")
+0:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_evx87"]
+texture = ExtResource("13_61il7")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e23g2"]
+texture = ExtResource("14_wctgd")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ypm05"]
+texture = ExtResource("15_kppnn")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5wngc"]
+texture = ExtResource("16_vlq8u")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twvb7"]
+texture = ExtResource("17_rgikk")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbh15"]
+texture = ExtResource("18_br3qj")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1p6gb"]
+sources/0 = SubResource("TileSetAtlasSource_wb0y0")
+sources/1 = SubResource("TileSetAtlasSource_mt60g")
+sources/2 = SubResource("TileSetAtlasSource_x1y8g")
+sources/3 = SubResource("TileSetAtlasSource_evx87")
+sources/4 = SubResource("TileSetAtlasSource_e23g2")
+sources/5 = SubResource("TileSetAtlasSource_ypm05")
+sources/6 = SubResource("TileSetAtlasSource_5wngc")
+sources/7 = SubResource("TileSetAtlasSource_twvb7")
+sources/8 = SubResource("TileSetAtlasSource_gbh15")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g66ju"]
+texture = ExtResource("19_ghjfe")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vt2j1"]
+texture = ExtResource("20_h1yf8")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsgd7"]
+texture = ExtResource("21_5jv76")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtebb"]
+texture = ExtResource("22_2ymy5")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gtq5h"]
+texture = ExtResource("23_5476x")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_osr0r"]
+texture = ExtResource("24_eem85")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cctre"]
+texture = ExtResource("25_c7af6")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_grcnu"]
+texture = ExtResource("26_yvu1l")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlfm8"]
+texture = ExtResource("27_fo7io")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_x3hkm"]
+sources/0 = SubResource("TileSetAtlasSource_g66ju")
+sources/1 = SubResource("TileSetAtlasSource_vt2j1")
+sources/2 = SubResource("TileSetAtlasSource_fsgd7")
+sources/3 = SubResource("TileSetAtlasSource_jtebb")
+sources/4 = SubResource("TileSetAtlasSource_gtq5h")
+sources/5 = SubResource("TileSetAtlasSource_osr0r")
+sources/6 = SubResource("TileSetAtlasSource_cctre")
+sources/7 = SubResource("TileSetAtlasSource_grcnu")
+sources/8 = SubResource("TileSetAtlasSource_tlfm8")
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hbdrl")
+
+[node name="Celeste" type="Sprite2D" parent="."]
+position = Vector2(573.5, 323.5)
+scale = Vector2(1.91013, 1.625)
+texture = ExtResource("1_5s1fs")
+
+[node name="Node2D" parent="." instance=ExtResource("1_b7wup")]
+position = Vector2(86, 70)
+scale = Vector2(0.9, 0.9)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 37.0
+offset_right = 212.0
+offset_bottom = 91.0
+theme = ExtResource("28_813x1")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+text = "Back"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAQAAIACAABAAAAAAAQAAMACAABAAEAAAAOAAIABwAAAAAAAAAOAAMABwAAAAEAAAAPAAIACAAAAAAAAAAPAAMACAAAAAEAAAAMAAIABwAAAAAAAAAMAAMABwAAAAEAAAANAAIABwABAAAAAAANAAMABwABAAEAAAAKAAIABwAAAAAAAAAKAAMABwAAAAEAAAALAAIABwABAAAAAAALAAMABwABAAEAAAAIAAIABgAAAAAAAAAIAAMABgAAAAEAAAAJAAIABgABAAAAAAAJAAMABgABAAEAAAAQAAAAAgABAAAAAAAQAAEAAgABAAEAAAAIAAAAAAAAAAAAAAAIAAEAAAAAAAEAAAAJAAAAAAABAAAAAAAJAAEAAAABAAEAAAAKAAAAAQABAAAAAAAKAAEAAQABAAEAAAALAAAAAQAAAAAAAAALAAEAAQAAAAEAAAAMAAAAAQABAAAAAAAMAAEAAQABAAEAAAANAAAAAQAAAAAAAAANAAEAAQAAAAEAAAAOAAAAAQAAAAAAAAAOAAEAAQAAAAEAAAAPAAAAAgAAAAAAAAAPAAEAAgAAAAEAAAA=")
+tile_set = SubResource("TileSet_52scl")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+position = Vector2(-11, 14)
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAAXAAMACAAAAAAAAAAXAAQACAAAAAEAAAAYAAMACAABAAAAAAAYAAQACAABAAEAAAAVAAMABwAAAAAAAAAVAAQABwAAAAEAAAAWAAMABwABAAAAAAAWAAQABwABAAEAAAATAAMABwAAAAAAAAATAAQABwAAAAEAAAAUAAMABwABAAAAAAAUAAQABwABAAEAAAARAAMABwAAAAAAAAARAAQABwAAAAEAAAASAAMABwABAAAAAAASAAQABwABAAEAAAAPAAMABwABAAAAAAAPAAQABwABAAEAAAAQAAMABwABAAAAAAAQAAQABwABAAEAAAAOAAMABgABAAAAAAAOAAQABgABAAEAAAANAAMABgAAAAAAAAANAAQABgAAAAEAAAANAAEAAAAAAAEAAAANAAIAAwAAAAEAAAAOAAEAAAABAAEAAAAOAAIAAwABAAEAAAAXAAAAAgAAAAAAAAAXAAEAAgAAAAEAAAAYAAEAAgABAAEAAAAPAAIABAAAAAEAAAAQAAIABAABAAEAAAARAAIABAAAAAEAAAASAAIABAABAAEAAAATAAIABAAAAAEAAAAUAAIABAABAAEAAAAVAAIABAAAAAEAAAAWAAIABAABAAEAAAAXAAIABQAAAAEAAAAPAAAAAQAAAAAAAAAPAAEAAQAAAAEAAAAQAAAAAQABAAAAAAAQAAEAAQABAAEAAAASAAAAAQABAAAAAAASAAEAAQABAAEAAAATAAAAAQABAAAAAAATAAEAAQABAAEAAAARAAAAAQAAAAAAAAARAAEAAQAAAAEAAAAUAAAAAQAAAAAAAAAUAAEAAQAAAAEAAAAVAAAAAQAAAAAAAAAVAAEAAQAAAAEAAAAWAAAAAQABAAAAAAAWAAEAAQABAAEAAAANAAAAAAAAAAAAAAAOAAAAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_1p6gb")
+
+[node name="TileMapLayer3" type="TileMapLayer" parent="."]
+position = Vector2(-72, -13)
+scale = Vector2(3.75, 3.75)
+tile_map_data = PackedByteArray("AAASAAkACAAAAAAAAAASAAoACAAAAAEAAAATAAkACAABAAAAAAATAAoACAABAAEAAAAQAAkABwAAAAAAAAAQAAoABwAAAAEAAAARAAkABwABAAAAAAARAAoABwABAAEAAAAOAAkABwAAAAAAAAAOAAoABwAAAAEAAAAPAAkABwABAAAAAAAPAAoABwABAAEAAAAMAAkABwAAAAAAAAAMAAoABwAAAAEAAAANAAkABwABAAAAAAANAAoABwABAAEAAAAKAAkABwAAAAAAAAAKAAoABwAAAAEAAAALAAkABwABAAAAAAALAAoABwABAAEAAAAIAAkABwAAAAAAAAAIAAoABwAAAAEAAAAJAAkABwABAAAAAAAJAAoABwABAAEAAAAGAAkABwAAAAAAAAAGAAoABwAAAAEAAAAHAAkABwABAAAAAAAHAAoABwABAAEAAAAEAAkABwAAAAAAAAAEAAoABwAAAAEAAAAFAAkABwABAAAAAAAFAAoABwABAAEAAAACAAkABgAAAAAAAAACAAoABgAAAAEAAAADAAkABgABAAAAAAADAAoABgABAAEAAAASAAcABQAAAAAAAAASAAgABQAAAAEAAAATAAcABQABAAAAAAATAAgABQABAAEAAAASAAUABQAAAAAAAAASAAYABQAAAAEAAAATAAUABQABAAAAAAATAAYABQABAAEAAAAQAAcABAAAAAAAAAAQAAgABAAAAAEAAAARAAcABAABAAAAAAARAAgABAABAAEAAAAOAAcABAAAAAAAAAAOAAgABAAAAAEAAAAPAAcABAABAAAAAAAPAAgABAABAAEAAAAMAAcABAAAAAAAAAAMAAgABAAAAAEAAAANAAcABAABAAAAAAANAAgABAABAAEAAAAJAAcABAABAAAAAAAJAAgABAABAAEAAAAKAAcABAAAAAAAAAAKAAgABAAAAAEAAAALAAcABAABAAAAAAALAAgABAABAAEAAAAIAAcABAAAAAAAAAAIAAgABAAAAAEAAAAGAAcABAAAAAAAAAAGAAgABAAAAAEAAAAHAAcABAABAAAAAAAHAAgABAABAAEAAAAEAAcABAAAAAAAAAAEAAgABAAAAAEAAAAFAAcABAABAAAAAAAFAAgABAABAAEAAAAEAAUABAAAAAAAAAAEAAYABAAAAAEAAAAFAAUABAABAAAAAAAFAAYABAABAAEAAAAGAAUABAAAAAAAAAAGAAYABAAAAAEAAAAHAAUABAABAAAAAAAHAAYABAABAAEAAAAIAAUABAAAAAAAAAAIAAYABAAAAAEAAAAJAAUABAABAAAAAAAJAAYABAABAAEAAAAKAAUABAAAAAAAAAAKAAYABAAAAAEAAAALAAUABAABAAAAAAALAAYABAABAAEAAAAMAAUABAAAAAAAAAAMAAYABAAAAAEAAAANAAUABAABAAAAAAANAAYABAABAAEAAAAOAAUABAAAAAAAAAAOAAYABAAAAAEAAAAPAAUABAABAAAAAAAPAAYABAABAAEAAAAQAAUABAAAAAAAAAAQAAYABAAAAAEAAAARAAUABAABAAAAAAARAAYABAABAAEAAAACAAYAAwAAAAEAAAACAAcAAwAAAAAAAAADAAYAAwABAAEAAAADAAcAAwABAAAAAAACAAgAAwAAAAEAAAADAAgAAwABAAEAAAACAAUAAwAAAAAAAAADAAUAAwABAAAAAAASAAMAAgAAAAAAAAASAAQAAgAAAAEAAAATAAMAAgABAAAAAAATAAQAAgABAAEAAAAQAAMAAQAAAAAAAAAQAAQAAQAAAAEAAAARAAMAAQABAAAAAAARAAQAAQABAAEAAAAOAAMAAQAAAAAAAAAOAAQAAQAAAAEAAAAPAAMAAQABAAAAAAAPAAQAAQABAAEAAAALAAMAAQABAAAAAAALAAQAAQABAAEAAAAMAAMAAQAAAAAAAAAMAAQAAQAAAAEAAAANAAMAAQABAAAAAAANAAQAAQABAAEAAAAKAAMAAQAAAAAAAAAKAAQAAQAAAAEAAAAIAAMAAQAAAAAAAAAIAAQAAQAAAAEAAAAJAAMAAQABAAAAAAAJAAQAAQABAAEAAAAGAAMAAQAAAAAAAAAGAAQAAQAAAAEAAAAHAAMAAQABAAAAAAAHAAQAAQABAAEAAAAEAAMAAQAAAAAAAAAEAAQAAQAAAAEAAAAFAAMAAQABAAAAAAAFAAQAAQABAAEAAAACAAMAAAAAAAAAAAACAAQAAAAAAAEAAAADAAMAAAABAAAAAAADAAQAAAABAAEAAAA=")
+tile_set = SubResource("TileSet_x3hkm")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -114.0
+offset_top = 46.0
+offset_right = 201.0
+offset_bottom = 167.0
+grow_horizontal = 2
+theme = ExtResource("28_813x1")
+theme_override_colors/font_color = Color(0.890196, 0.517647, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_font_sizes/font_size = 100
+text = "Credits"
+
+[node name="Assets" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_left = 116.0
+offset_top = 206.0
+offset_right = 317.0
+offset_bottom = 492.0
+theme = ExtResource("28_813x1")
+
+[node name="Label" type="Label" parent="Assets"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 70
+text = "Assets"
+
+[node name="Label2" type="Label" parent="Assets"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Pixel Frog"
+
+[node name="Label5" type="Label" parent="Assets"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Brackeys"
+
+[node name="Assets2" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_left = 379.0
+offset_top = 211.0
+offset_right = 759.0
+offset_bottom = 502.0
+theme = ExtResource("28_813x1")
+
+[node name="Label" type="Label" parent="Assets2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 70
+text = "Developers"
+
+[node name="Label2" type="Label" parent="Assets2"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Vicente Ortuño"
+
+[node name="Label5" type="Label" parent="Assets2"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Cristian Ormazabal"
+
+[node name="Label3" type="Label" parent="Assets2"]
+layout_mode = 2
+text = "Benjamín Bettocchi"
+
+[node name="Background Music" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 211.0
+offset_right = 1211.0
+offset_bottom = 350.0
+theme = ExtResource("28_813x1")
+
+[node name="Label4" type="Label" parent="Background Music"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 80
+text = "Bg Music"
+
+[node name="Label3" type="Label" parent="Background Music"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Leohpaz"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 425.0
+offset_right = 383.0
+offset_bottom = 564.0
+theme = ExtResource("28_813x1")
+
+[node name="Tilemaps" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 70
+text = "TileMaps"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Pixel Frog"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 842.0
+offset_top = 419.0
+offset_right = 1003.0
+offset_bottom = 558.0
+theme = ExtResource("28_813x1")
+
+[node name="Label" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 80
+text = "Fonts"
+
+[node name="Label2" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "vrtxrry"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
