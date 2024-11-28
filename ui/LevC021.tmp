@@ -20,7 +20,6 @@ offset_right = 160.0
 offset_bottom = 110.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2, 2)
 
 [node name="Label" type="Label" parent="LevelSelector/VBoxContainer"]
 layout_mode = 2
@@ -33,12 +32,8 @@ tile_map_data = PackedByteArray("AAAAAAkAAAACAAsAAAARAAkAAAAHAAsAAAABAAkAAAADAAs
 tile_set = ExtResource("1_cnao7")
 
 [node name="Player" parent="." instance=ExtResource("2_wbhgs")]
-position = Vector2(581, 574)
+position = Vector2(572, 551)
 
 [node name="LevelDoor" parent="." instance=ExtResource("3_70otn")]
-position = Vector2(235, 567)
+position = Vector2(200, 547)
 level = 1
-
-[node name="LevelDoor2" parent="." instance=ExtResource("3_70otn")]
-position = Vector2(360, 566)
-level = 2

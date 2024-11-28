@@ -14,6 +14,9 @@ func go_to_menu():
 		return
 	get_tree().change_scene_to_packed(mainmenu)
 
+func is_unlocked(level_id: int):
+	return (level_id in unlocked)
+
 
 func go_to_selector() ->void:
 	if not level_selector:
