@@ -1,0 +1,61 @@
+[gd_scene load_steps=12 format=3 uid="uid://dbblacmjodngq"]
+
+[ext_resource type="Texture2D" uid="uid://b6yo8j6b85f20" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/1.png" id="1_00daq"]
+[ext_resource type="Script" path="res://key.gd" id="1_tt65o"]
+[ext_resource type="Texture2D" uid="uid://dchcga7arha81" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/2.png" id="2_yn51h"]
+[ext_resource type="Texture2D" uid="uid://b0tth6fxwxgmr" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/3.png" id="3_7mw8d"]
+[ext_resource type="Texture2D" uid="uid://dmjvfhm5h6xhm" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/4.png" id="4_mrg1b"]
+[ext_resource type="Texture2D" uid="uid://dswgmm5ww5jay" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/5.png" id="5_7ygp6"]
+[ext_resource type="Texture2D" uid="uid://t42k2ejm110b" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/6.png" id="6_kc4ob"]
+[ext_resource type="Texture2D" uid="uid://bngt1ls5y5k0m" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/7.png" id="7_db3le"]
+[ext_resource type="Texture2D" uid="uid://cdsf0fn0t8l8b" path="res://assets/Treasure Hunters/Merchant Ship/Sprites/Chest Key/Idle/8.png" id="8_q3pa3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pu5nm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_00daq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yn51h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7mw8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mrg1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7ygp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kc4ob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_db3le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q3pa3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b2mug"]
+
+[node name="key" type="Area2D"]
+script = ExtResource("1_tt65o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4, 0)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_pu5nm")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 1)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CapsuleShape2D_b2mug")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
