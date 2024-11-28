@@ -1,0 +1,93 @@
+[gd_scene load_steps=15 format=3 uid="uid://oopollph08il"]
+
+[ext_resource type="Script" path="res://kinghuman.gd" id="1_6qkgu"]
+[ext_resource type="Texture2D" uid="uid://b5mrvgebemmeg" path="res://assets/Kings and Pigs/Sprites/01-King Human/Run (78x58).png" id="2_wg2gj"]
+[ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="3_y8cmu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ley07"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njwhn"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(0, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okiaw"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(78, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0nfv"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(156, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wej2"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(234, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_it8t5"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(312, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0awik"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(390, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhk58"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(468, 0, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mursr"]
+atlas = ExtResource("2_wg2gj")
+region = Rect2(546, 0, 78, 58)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yid3b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njwhn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okiaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0nfv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wej2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_it8t5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0awik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhk58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mursr")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6yse"]
+size = Vector2(37, 28)
+
+[node name="kinghuman" type="CharacterBody2D"]
+scale = Vector2(1.3, 1.3)
+script = ExtResource("1_6qkgu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ley07")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, -2)
+sprite_frames = SubResource("SpriteFrames_yid3b")
+animation = &"run"
+frame_progress = 0.499848
+
+[node name="RestartZone" parent="." instance=ExtResource("3_y8cmu")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RestartZone"]
+position = Vector2(-5.5, -1)
+shape = SubResource("RectangleShape2D_g6yse")

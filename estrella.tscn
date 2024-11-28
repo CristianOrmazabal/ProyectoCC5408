@@ -1,0 +1,91 @@
+[gd_scene load_steps=17 format=3 uid="uid://bn2worb6hw0i7"]
+
+[ext_resource type="Script" path="res://estrella.gd" id="1_x57gp"]
+[ext_resource type="Texture2D" uid="uid://dae71fwo6btnp" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 01.png" id="2_luavo"]
+[ext_resource type="Texture2D" uid="uid://df663jyrbvow6" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/04-Fall/Fall 01.png" id="2_v07lt"]
+[ext_resource type="Texture2D" uid="uid://dp6cfhtumxwc7" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 02.png" id="3_kpmln"]
+[ext_resource type="Texture2D" uid="uid://tsct383cc81c" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="3_v6htc"]
+[ext_resource type="Texture2D" uid="uid://dbph362fn52af" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="4_a5i2p"]
+[ext_resource type="Texture2D" uid="uid://bxg6k1s1n4ap5" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 03.png" id="4_jxj12"]
+[ext_resource type="Texture2D" uid="uid://bks3fjpyxp3ff" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 04.png" id="5_rvfdn"]
+[ext_resource type="Texture2D" uid="uid://rhh1lk0kqqju" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 03.png" id="5_v6taa"]
+[ext_resource type="Texture2D" uid="uid://chje5jjuglnpe" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 04.png" id="6_aindb"]
+[ext_resource type="Texture2D" uid="uid://chiasmdaaqwi" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 05.png" id="7_e5viy"]
+[ext_resource type="Texture2D" uid="uid://8qusytpjp10c" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 06.png" id="8_050xb"]
+[ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="13_8ahgo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52y6n"]
+size = Vector2(23, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g13fh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_luavo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kpmln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jxj12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rvfdn")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v07lt")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v6htc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a5i2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v6taa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_aindb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_e5viy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_050xb")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_054su"]
+size = Vector2(29, 27)
+
+[node name="estrella" type="CharacterBody2D"]
+scale = Vector2(1.8, 1.8)
+script = ExtResource("1_x57gp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_52y6n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_g13fh")
+animation = &"run"
+autoplay = "run"
+
+[node name="RestartZone" parent="." instance=ExtResource("13_8ahgo")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RestartZone"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_054su")

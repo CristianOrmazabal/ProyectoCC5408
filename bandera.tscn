@@ -1,0 +1,53 @@
+[gd_scene load_steps=11 format=3 uid="uid://bgk0rlc6f12f2"]
+
+[ext_resource type="Texture2D" uid="uid://bu5tsss7u2kkc" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_5wjvs"]
+[ext_resource type="Texture2D" uid="uid://b8gkj21xgg0ok" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_42fdt"]
+[ext_resource type="Texture2D" uid="uid://bjwqi3vog18y8" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_pdvjn"]
+[ext_resource type="Texture2D" uid="uid://h6va6x0guknk" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_u0n4j"]
+[ext_resource type="Texture2D" uid="uid://nobgnalfx3j7" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_asfp4"]
+[ext_resource type="Texture2D" uid="uid://ceggviitq7076" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_qn04k"]
+[ext_resource type="Texture2D" uid="uid://ykk0k1vg7omp" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_86nkb"]
+[ext_resource type="Texture2D" uid="uid://hv6ifrdyd6b4" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_rag4j"]
+[ext_resource type="Texture2D" uid="uid://brx2t3lsyqxpr" path="res://assets/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_jok7l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_15yqj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5wjvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_42fdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pdvjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u0n4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_asfp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qn04k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_86nkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rag4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jok7l")
+}],
+"loop": true,
+"name": &"movement",
+"speed": 5.0
+}]
+
+[node name="bandera" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_15yqj")
+animation = &"movement"
+autoplay = "movement"

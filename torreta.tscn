@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://b453epuh4xf2f"]
+
+[ext_resource type="Script" path="res://torreta.gd" id="1_sidb1"]
+[ext_resource type="Texture2D" uid="uid://dmcqlm1prnup5" path="res://assets/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Idle/1.png" id="1_xen8g"]
+[ext_resource type="PackedScene" uid="uid://b8cfp7a6cdub0" path="res://bala.tscn" id="2_7b1p1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uuutu"]
+size = Vector2(34, 24)
+
+[node name="torreta" type="Area2D"]
+position = Vector2(203, 119)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_sidb1")
+bullet = ExtResource("2_7b1p1")
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+texture = ExtResource("1_xen8g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_uuutu")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, -2)
+
+[node name="spawnbullet" type="Marker2D" parent="."]
+position = Vector2(-51.3333, -1.33333)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
