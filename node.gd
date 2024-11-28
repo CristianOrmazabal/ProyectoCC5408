@@ -3,6 +3,7 @@ extends Node
 @export var mainmenu: PackedScene
 @export var level_selector: PackedScene
 signal victory()
+signal door_key()
 @export var levels = {
 	1:"res://scenes/mapa_1.tscn"
 }

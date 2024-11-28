@@ -1,8 +1,9 @@
 class_name puerta_nivel
 extends Area2D
 
+
 @export var level: int
-var staturs
+#var status
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 var inside = false
