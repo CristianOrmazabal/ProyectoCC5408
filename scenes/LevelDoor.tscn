@@ -1,0 +1,65 @@
+[gd_scene load_steps=14 format=3 uid="uid://cdp04nqdgdlgx"]
+
+[ext_resource type="Script" path="res://scenes/level_door.gd" id="1_t7jsg"]
+[ext_resource type="Texture2D" uid="uid://c7s13tw1mwaxd" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/01.png" id="4_dbr4c"]
+[ext_resource type="Texture2D" uid="uid://dxjyr8y073qx6" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/02.png" id="5_jyxkj"]
+[ext_resource type="Texture2D" uid="uid://dyjhtxqq5mv7m" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/03.png" id="6_xibau"]
+[ext_resource type="Texture2D" uid="uid://43orpcxecfge" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/04.png" id="7_kr3ro"]
+[ext_resource type="Texture2D" uid="uid://dnps8x10wvifs" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/05.png" id="8_4yyi7"]
+[ext_resource type="Texture2D" uid="uid://murx1ach7k4b" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Closing/01.png" id="9_24hvs"]
+[ext_resource type="Texture2D" uid="uid://b7bx0cbcnfnew" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Closing/02.png" id="10_h32x0"]
+[ext_resource type="Texture2D" uid="uid://bwy7vgm1lsg64" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Closing/03.png" id="11_lqwlr"]
+[ext_resource type="Texture2D" uid="uid://bnt310vehukin" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Closing/04.png" id="12_nqckf"]
+[ext_resource type="Texture2D" uid="uid://dgo12wgc3tb4s" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Closing/05.png" id="13_1vlst"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugbn0"]
+size = Vector2(41, 49)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_we678"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_dbr4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jyxkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xibau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kr3ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4yyi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_24hvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_h32x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lqwlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nqckf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1vlst")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LevelDoor" type="Area2D"]
+script = ExtResource("1_t7jsg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_ugbn0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -5)
+sprite_frames = SubResource("SpriteFrames_we678")
