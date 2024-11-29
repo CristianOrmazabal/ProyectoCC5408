@@ -2,11 +2,11 @@
 
 [ext_resource type="TileSet" uid="uid://c2leb318obug8" path="res://scenes/tilesets/tileset1.1.tres" id="1_kshv4"]
 [ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/Player.tscn" id="2_2eayq"]
-[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/pinchos.tscn" id="3_be2t8"]
-[ext_resource type="PackedScene" uid="uid://bw42sc20f6jyn" path="res://assets/shuriken.tscn" id="4_vwprx"]
-[ext_resource type="PackedScene" uid="uid://cb765v35nuhgs" path="res://scenes/spike_ball_small.tscn" id="5_3n7a2"]
-[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/puertavictoria.tscn" id="6_idcwq"]
-[ext_resource type="PackedScene" uid="uid://dbblacmjodngq" path="res://key.tscn" id="7_dr6at"]
+[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/enemies/pinchos.tscn" id="3_be2t8"]
+[ext_resource type="PackedScene" uid="uid://bw42sc20f6jyn" path="res://scenes/enemies/shuriken.tscn" id="4_vwprx"]
+[ext_resource type="PackedScene" uid="uid://cb765v35nuhgs" path="res://scenes/enemies/spike_ball_small.tscn" id="5_3n7a2"]
+[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/elementos/puertavictoria.tscn" id="6_idcwq"]
+[ext_resource type="PackedScene" uid="uid://dbblacmjodngq" path="res://scenes/elementos/key.tscn" id="7_dr6at"]
 [ext_resource type="PackedScene" uid="uid://bd2sube4b017f" path="res://ui/victory_screen.tscn" id="8_peil6"]
 
 [node name="Mapac1" type="Node2D"]
@@ -380,7 +380,7 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(744, 454)
 
 [node name="shuriken2" parent="." instance=ExtResource("4_vwprx")]
-position = Vector2(1022, 455)
+position = Vector2(1008, 443)
 
 [node name="shuriken3" parent="." instance=ExtResource("4_vwprx")]
 position = Vector2(173, 210)
@@ -398,4 +398,3 @@ locked = true
 position = Vector2(870, 120)
 
 [node name="Victory_screen" parent="." instance=ExtResource("8_peil6")]
-current_level = 2

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://b453epuh4xf2f"]
 
-[ext_resource type="Script" path="res://torreta.gd" id="1_sidb1"]
+[ext_resource type="Script" path="res://scenes/enemies/torreta.gd" id="1_sidb1"]
 [ext_resource type="Texture2D" uid="uid://dmcqlm1prnup5" path="res://assets/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Idle/1.png" id="1_xen8g"]
-[ext_resource type="PackedScene" uid="uid://b8cfp7a6cdub0" path="res://bala.tscn" id="2_7b1p1"]
+[ext_resource type="PackedScene" uid="uid://b8cfp7a6cdub0" path="res://scenes/enemies/bala.tscn" id="2_7b1p1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uuutu"]
 size = Vector2(34, 24)

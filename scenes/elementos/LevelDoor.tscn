@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://cdp04nqdgdlgx"]
 
-[ext_resource type="Script" path="res://scenes/level_door.gd" id="1_t7jsg"]
+[ext_resource type="Script" path="res://scenes/elementos/level_door.gd" id="1_t7jsg"]
 [ext_resource type="Texture2D" uid="uid://c7s13tw1mwaxd" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/01.png" id="4_dbr4c"]
 [ext_resource type="Texture2D" uid="uid://dxjyr8y073qx6" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/02.png" id="5_jyxkj"]
 [ext_resource type="Texture2D" uid="uid://dyjhtxqq5mv7m" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Door/Opening/03.png" id="6_xibau"]

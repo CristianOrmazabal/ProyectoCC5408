@@ -1,8 +1,8 @@
-[gd_scene load_steps=14 format=4 uid="uid://c7mwi66oj0c1x"]
+[gd_scene load_steps=15 format=4 uid="uid://c7mwi66oj0c1x"]
 
 [ext_resource type="Texture2D" uid="uid://ci08gmmfcnf32" path="res://assets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_etxkn"]
-[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/puertavictoria.tscn" id="2_ox034"]
-[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/pinchos.tscn" id="3_ge7kc"]
+[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/elementos/puertavictoria.tscn" id="2_ox034"]
+[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/enemies/pinchos.tscn" id="3_ge7kc"]
 [ext_resource type="Texture2D" uid="uid://c1b50lfllg02j" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Barrels and Bottles/01.png" id="3_gqmyv"]
 [ext_resource type="Texture2D" uid="uid://bx5qwu6rsrf8j" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Barrels and Bottles/03.png" id="5_wt2s3"]
 [ext_resource type="Texture2D" uid="uid://bdagu3ryrmhxm" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Barrels and Bottles/04.png" id="6_53p8c"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://h5u4r2jwrus" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Window/Window/01.png" id="9_rcujr"]
 [ext_resource type="Texture2D" uid="uid://qudpdy8swe4m" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Window/Window Light/01.png" id="10_2cxr2"]
 [ext_resource type="Texture2D" uid="uid://d1l513sytxamr" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Barrels and Bottles/06.png" id="10_7jeff"]
+[ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/Player.tscn" id="12_thlao"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxklh"]
 texture = ExtResource("1_etxkn")
@@ -695,3 +696,6 @@ texture = ExtResource("10_7jeff")
 [node name="18" type="Sprite2D" parent="Node"]
 position = Vector2(302, 465)
 texture = ExtResource("7_qwq87")
+
+[node name="Node2D" parent="." instance=ExtResource("12_thlao")]
+position = Vector2(160, 394)

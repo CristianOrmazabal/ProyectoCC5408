@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=4 uid="uid://kai38wjpjaya"]
+[gd_scene load_steps=12 format=4 uid="uid://kai38wjpjaya"]
 
 [ext_resource type="TileSet" uid="uid://vjxf8bke4d61" path="res://scenes/tilesets/tileset1.tres" id="1_uksq1"]
 [ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/Player.tscn" id="2_0sr4e"]
-[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/pinchos.tscn" id="3_kaktr"]
-[ext_resource type="PackedScene" uid="uid://bw42sc20f6jyn" path="res://assets/shuriken.tscn" id="4_imyp4"]
+[ext_resource type="PackedScene" uid="uid://dtq5i6e80dnwu" path="res://scenes/enemies/pinchos.tscn" id="3_kaktr"]
+[ext_resource type="PackedScene" uid="uid://bw42sc20f6jyn" path="res://scenes/enemies/shuriken.tscn" id="4_imyp4"]
 [ext_resource type="PackedScene" uid="uid://csr2bf5psic21" path="res://characters/Shadow.tscn" id="5_6gsub"]
 [ext_resource type="Texture2D" uid="uid://vydixj7q75q" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Window/Window/12.png" id="6_t0nln"]
 [ext_resource type="Texture2D" uid="uid://bcibfva31spdh" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Window/Window/18.png" id="7_ieggu"]
 [ext_resource type="Texture2D" uid="uid://qudpdy8swe4m" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Window/Window Light/01.png" id="8_c55pl"]
 [ext_resource type="Texture2D" uid="uid://q46lr56qi1r1" path="res://assets/Treasure Hunters/Pirate Ship/Sprites/Decorations/Chains/Big/05.png" id="9_f4a2u"]
+[ext_resource type="PackedScene" uid="uid://dbblacmjodngq" path="res://scenes/elementos/key.tscn" id="10_oa87y"]
+[ext_resource type="PackedScene" uid="uid://c0nrw0v3dtuvm" path="res://scenes/elementos/puertavictoria.tscn" id="11_hb85d"]
 
 [node name="mapa5" type="Node2D"]
 
@@ -454,3 +456,10 @@ texture = ExtResource("9_f4a2u")
 [node name="Sprite2D22" type="Sprite2D" parent="ventanas"]
 position = Vector2(410, 447)
 texture = ExtResource("9_f4a2u")
+
+[node name="key" parent="." instance=ExtResource("10_oa87y")]
+position = Vector2(1098, 62)
+
+[node name="Puertavictoria" parent="." instance=ExtResource("11_hb85d")]
+position = Vector2(689, 584)
+locked = true

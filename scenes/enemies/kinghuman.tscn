@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://oopollph08il"]
 
-[ext_resource type="Script" path="res://kinghuman.gd" id="1_6qkgu"]
+[ext_resource type="Script" path="res://scenes/enemies/kinghuman.gd" id="1_6qkgu"]
 [ext_resource type="Texture2D" uid="uid://b5mrvgebemmeg" path="res://assets/Kings and Pigs/Sprites/01-King Human/Run (78x58).png" id="2_wg2gj"]
 [ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="3_y8cmu"]
 

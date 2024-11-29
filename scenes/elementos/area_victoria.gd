@@ -26,7 +26,7 @@ func _on_body_entered(body: Node) -> void:
 		print("action")
 		action(player)
 	
-func action(player: Player) -> void:
+func action(_player: Player) -> void:
 	LevelManager.victory.emit()
 	print("victoria")
 
