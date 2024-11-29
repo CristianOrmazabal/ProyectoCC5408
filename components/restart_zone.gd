@@ -5,5 +5,6 @@ func _ready() -> void:
 	super._ready()
 
 func action(_player: Player) -> void:
+	LevelManager.muerte.emit()
 	get_tree().reload_current_scene()
 	Gravity.set_gravity(Vector2.DOWN)

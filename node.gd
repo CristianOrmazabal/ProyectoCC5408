@@ -4,8 +4,9 @@ extends Node
 @export var level_selector: PackedScene
 signal victory()
 signal door_key()
+signal muerte()
 @export var levels: Array[PackedScene]
-var unlocked = [0]
+var unlocked = [0,1,2,3,4]
 const max_level = 5
 var current_level: int = 0
 #const LEVEL_SELECTOR = preload("res://ui/LevelSelector.tscn")

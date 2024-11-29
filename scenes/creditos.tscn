@@ -387,12 +387,17 @@ size_flags_horizontal = 4
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 16
 theme_override_font_sizes/font_size = 80
-text = "Bg Music"
+text = "Music & Sfx"
 
 [node name="Label3" type="Label" parent="Background Music"]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Leohpaz"
+
+[node name="Label" type="Label" parent="Background Music"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Brackeys"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0

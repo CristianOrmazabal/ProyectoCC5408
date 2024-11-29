@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Gravity="*res://autoloads/gravity.gd"
 LevelManager="*res://node.tscn"
+ManagerSound="*res://autoloads/ManagerSound.tscn"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [input]
 

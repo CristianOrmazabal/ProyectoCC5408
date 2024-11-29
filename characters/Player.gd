@@ -14,8 +14,8 @@ const JUMP_VELOCITY = -250.0
 @onready var ray_cast_2d_right_3: RayCast2D = %RayCast2D_RIGHT3
 @onready var ray_cast_2d_left_3: RayCast2D = %RayCast2D_LEFT3
 
-
-
+@onready var sonido_gravedad = $SonidoGravedad
+@onready var sonido_salto = $SonidoSalto
 @onready var gravity = Gravity.get_gravity()
 @onready var gravity_mag := Gravity.get_magnitude()
 @onready var animated_sprite = $AnimatedSprite2D
@@ -66,28 +66,33 @@ func _physics_process(delta):
 	if is_on_floor(): #cambio de gravedad solo usable en piso{
 		#var GlobalG = ["Gravity_down","Gravity_up","Gravity_left",""]
 		#var inp = Input
-		if Input.is_action_just_pressed("Gravity_down"):
+		if Input.is_action_just_pressed("Gravity_down")and not Gravity.get_gravity_dir() == Vector2.DOWN:
 			Gravity.set_gravity(Vector2.DOWN)
 			set_up_direction(Vector2.UP)
 			rotation_degrees = 0
-		if Input.is_action_just_pressed("Gravity_up"):
+			sonido_gravedad.play()
+		if Input.is_action_just_pressed("Gravity_up")and not Gravity.get_gravity_dir() == Vector2.UP:
 			Gravity.set_gravity(Vector2.UP)
 			set_up_direction(Vector2.DOWN)
 			rotation_degrees = 180
-		if Input.is_action_just_pressed("Gravity_left"):
+			sonido_gravedad.play()
+		if Input.is_action_just_pressed("Gravity_left") and not Gravity.get_gravity_dir() == Vector2.LEFT:
 			Gravity.set_gravity(Vector2.LEFT)
 			set_up_direction(Vector2.RIGHT)
 			rotation_degrees = 90
-		if Input.is_action_just_pressed("Gravity_right"):
+			sonido_gravedad.play()
+		if Input.is_action_just_pressed("Gravity_right") and not Gravity.get_gravity_dir() == Vector2.RIGHT:
 			Gravity.set_gravity(Vector2.RIGHT)
 			set_up_direction(Vector2.LEFT)
 			rotation_degrees = 270
+			sonido_gravedad.play()
 	
 		
 	if abs(gravity.x) == 0: #gravedadd vertical
 		# Handle jump.
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = JUMP_VELOCITY * gravity.y
+			sonido_salto.play()
 
 	# Get the input direction and handle the movement/deceleration.
 		var direction = Input.get_axis("move_left", "move_right")
@@ -112,6 +117,7 @@ func _physics_process(delta):
 				# Handle jump.
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.x = JUMP_VELOCITY * gravity.x
+			sonido_salto.play()
 			
 			# Get the input direction and handle the movement/deceleration.
 		var direction = Input.get_axis("move_down", "move_up")

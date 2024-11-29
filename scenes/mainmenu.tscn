@@ -305,7 +305,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_iok50")
 creditos = ExtResource("2_2clff")
-mainmenu = null
 
 [node name="Celeste" type="Sprite2D" parent="."]
 position = Vector2(0.5, -1.49997)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cek335pskom17"]
+[gd_scene load_steps=32 format=3 uid="uid://cek335pskom17"]
 
 [ext_resource type="Texture2D" uid="uid://dv4k5n45i5jj7" path="res://assets/Little Mage1-1/Little Mage/Falling/Falling1.png" id="1_gw7q7"]
 [ext_resource type="Script" path="res://characters/Player.gd" id="1_ltxrq"]
@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://b78vvcs28n3gv" path="res://assets/Little Mage1-1/Little Mage/Run/Run6.png" id="24_47q5g"]
 [ext_resource type="PackedScene" uid="uid://b7deov26f43cb" path="res://scenes/Pausa.tscn" id="26_bg282"]
 [ext_resource type="PackedScene" uid="uid://bd2sube4b017f" path="res://ui/victory_screen.tscn" id="27_0kllb"]
+[ext_resource type="AudioStream" uid="uid://wqybyje0uygj" path="res://sounds/jump.wav" id="28_nvcrm"]
+[ext_resource type="AudioStream" uid="uid://bwwi8jmvi15dr" path="res://sounds/power_up.wav" id="29_rd571"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0shu6"]
 radius = 11.0
@@ -186,3 +188,12 @@ frame_progress = 0.195971
 [node name="CanvasLayer" parent="Player" instance=ExtResource("26_bg282")]
 
 [node name="Victory_screen" parent="Player" instance=ExtResource("27_0kllb")]
+
+[node name="SonidoSalto" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("28_nvcrm")
+volume_db = -20.129
+pitch_scale = 1.51
+
+[node name="SonidoGravedad" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("29_rd571")
+volume_db = -20.129
