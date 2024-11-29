@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://bw42sc20f6jyn"]
 
-[ext_resource type="Script" path="res://assets/shuriken.gd" id="1_ui8h4"]
+[ext_resource type="Script" path="res://scenes/enemies/shuriken.gd" id="1_ui8h4"]
 [ext_resource type="Texture2D" uid="uid://du07mn8qf6xqd" path="res://assets/Trap/Suriken.png" id="2_t6mpo"]
 [ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="3_xf2uc"]
 

@@ -4,7 +4,7 @@ extends CanvasLayer
 @onready var select: Button = $VBoxContainer/Select
 @onready var menu: Button = $VBoxContainer/Menu
 var main = preload("res://scenes/main.tscn")
-@export var current_level: int
+#@export var current_level: int
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,14 +15,15 @@ func _ready() -> void:
 	hide()
 
 func _on_victory() -> void:
-	LevelManager.unlock_level(current_level+1)
+	LevelManager.unlock_level(LevelManager.current_level+1)
 	visible = not visible
 	get_tree().paused = visible
 
 func _on_next_pressed() -> void:
 	get_tree().paused = false
 	Gravity.set_gravity(Vector2.DOWN)	
-	LevelManager.load_level(current_level+1)
+	#LevelManager.load_level(current_level+1)
+	LevelManager.load_next_level()
 	
 func _on_select_pressed() -> void:
 	get_tree().paused = false

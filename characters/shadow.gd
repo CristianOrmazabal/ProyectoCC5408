@@ -15,7 +15,7 @@ func _ready() -> void:
 
 func _on_gravity_changed() ->void:
 	gravity = Gravity.get_gravity() * gravity_mag
-	var inp = Input
+	#var inp = Input
 	if Input.is_action_just_pressed("Gravity_down"):
 		#Gravity.set_gravity(Vector2.DOWN)
 		set_up_direction(Vector2.DOWN)

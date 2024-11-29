@@ -1,8 +1,9 @@
 class_name puerta_nivel
 extends Area2D
+#puerta selectora de nivel
 
 @export var level: int
-var staturs
+#var status
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 var inside = false
@@ -27,11 +28,12 @@ func _on_body_entered(body: Node) -> void:
 		inside = true
 		#action(player)
 	
-func _process(delta: float) -> void:
-	if inside:
+func _process(_delta: float) -> void:
+	if inside: #probablemente no se haga asi
 		if Input.is_action_just_pressed("ui_accept"):
 			Gravity.set_gravity(Vector2.DOWN)
 			if LevelManager.is_unlocked(level):
+				LevelManager.current_level = level
 				LevelManager.load_level(level)
 			else:
 				print("nivel no desbloqueado o no existe")

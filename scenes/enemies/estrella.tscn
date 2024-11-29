@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://bn2worb6hw0i7"]
 
-[ext_resource type="Script" path="res://estrella.gd" id="1_x57gp"]
+[ext_resource type="Script" path="res://scenes/enemies/estrella.gd" id="1_x57gp"]
 [ext_resource type="Texture2D" uid="uid://dae71fwo6btnp" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 01.png" id="2_luavo"]
 [ext_resource type="Texture2D" uid="uid://df663jyrbvow6" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/04-Fall/Fall 01.png" id="2_v07lt"]
 [ext_resource type="Texture2D" uid="uid://dp6cfhtumxwc7" path="res://assets/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 02.png" id="3_kpmln"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ba2axy7ut0wqq" path="res://components/restart_zone.tscn" id="13_8ahgo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52y6n"]
-size = Vector2(23, 21)
+size = Vector2(21.5556, 21.1111)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g13fh"]
 animations = [{
@@ -69,14 +69,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_054su"]
-size = Vector2(29, 27)
+size = Vector2(23.3333, 22.2222)
 
 [node name="estrella" type="CharacterBody2D"]
 scale = Vector2(1.8, 1.8)
 script = ExtResource("1_x57gp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+position = Vector2(0.222222, 0.555556)
 shape = SubResource("RectangleShape2D_52y6n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -87,5 +87,5 @@ autoplay = "run"
 [node name="RestartZone" parent="." instance=ExtResource("13_8ahgo")]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="RestartZone"]
-position = Vector2(-0.5, 0.5)
+position = Vector2(0.555555, -4.63592e-07)
 shape = SubResource("RectangleShape2D_054su")

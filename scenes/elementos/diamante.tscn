@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://behbr3asw67c"]
 
-[ext_resource type="Script" path="res://diamante.gd" id="1_eyoui"]
+[ext_resource type="Script" path="res://scenes/elementos/diamante.gd" id="1_eyoui"]
 [ext_resource type="Texture2D" uid="uid://ffh32fhh4vum" path="res://assets/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/01.png" id="2_wiijc"]
 [ext_resource type="Texture2D" uid="uid://dvfv7s84al8ou" path="res://assets/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/02.png" id="3_mdapw"]
 [ext_resource type="Texture2D" uid="uid://bq40bv26guy7m" path="res://assets/Treasure Hunters/Pirate Treasure/Sprites/Blue Diamond/03.png" id="4_6sloj"]

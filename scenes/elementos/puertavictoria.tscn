@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c0nrw0v3dtuvm"]
 
-[ext_resource type="Texture2D" uid="uid://c73flt82kok4l" path="res://assets/Kings and Pigs/Sprites/11-Door/Idle.png" id="1_dhwfe"]
-[ext_resource type="Script" path="res://scenes/area_victoria.gd" id="2_htjwt"]
+[ext_resource type="Texture2D" uid="uid://b8yed4lrm1xnq" path="res://assets/Kings and Pigs/Sprites/11-Door/Opening (46x56).png" id="2_6d20b"]
+[ext_resource type="Script" path="res://scenes/elementos/area_victoria.gd" id="2_htjwt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7tlv6"]
 size = Vector2(51, 53)
@@ -13,6 +13,7 @@ script = ExtResource("2_htjwt")
 position = Vector2(1.5, -2.5)
 shape = SubResource("RectangleShape2D_7tlv6")
 
-[node name="Idle" type="Sprite2D" parent="."]
+[node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(1, -3)
-texture = ExtResource("1_dhwfe")
+texture = ExtResource("2_6d20b")
+hframes = 5

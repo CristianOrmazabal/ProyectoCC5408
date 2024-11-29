@@ -1,11 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bo1e83u14ey1b"]
+[gd_scene load_steps=2 format=3 uid="uid://bo1e83u14ey1b"]
 
-[ext_resource type="PackedScene" uid="uid://bctcglvb2iadl" path="res://scenes/mapa_1.tscn" id="1_gsgab"]
-[ext_resource type="PackedScene" uid="uid://cek335pskom17" path="res://characters/Player.tscn" id="2_b52db"]
+[ext_resource type="PackedScene" uid="uid://bctcglvb2iadl" path="res://scenes/mapas/mapa_1.tscn" id="1_gsgab"]
 
 [node name="main" type="Node2D"]
 
 [node name="mapa 1" parent="." instance=ExtResource("1_gsgab")]
-
-[node name="Node2D" parent="." instance=ExtResource("2_b52db")]
-position = Vector2(83, 202)

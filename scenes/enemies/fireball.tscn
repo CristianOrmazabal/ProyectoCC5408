@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dkrgv0euu0hlc"]
 
-[ext_resource type="Script" path="res://scenes/fireball.gd" id="1_8p5bp"]
+[ext_resource type="Script" path="res://scenes/enemies/fireball.gd" id="1_8p5bp"]
 [ext_resource type="Texture2D" uid="uid://cpue2hq7akdpp" path="res://assets/FB00_nyknck/FB00_nyknck/FB001.png" id="1_h8e67"]
 [ext_resource type="Texture2D" uid="uid://divsnbm1xiyx4" path="res://assets/FB00_nyknck/FB00_nyknck/FB002.png" id="2_v8bm8"]
 [ext_resource type="Texture2D" uid="uid://cqvn8321q3ktl" path="res://assets/FB00_nyknck/FB00_nyknck/FB003.png" id="3_j6ao4"]
